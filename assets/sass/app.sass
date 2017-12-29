@@ -1,0 +1,48 @@
+*, *::before, *::after 
+  box-sizing: inherit
+
+html 
+  box-sizing: border-box
+
+body 
+  min-width: 320px 
+  margin: 0
+  //?
+  display: flex           // Исправляем баг в IE для min-height and flexbox (flex-direction:column)
+  flex-direction: column  // и прижимаем footer в IE 10-11
+  min-height: 100%
+  //?
+  font-family: $font-family 
+  font-size: 16px
+  line-height: 1.375em
+  font-weight: 400 
+  color: $second-txt-color 
+  background-color: $base-color 
+
+img 
+  max-width: 100% 
+  height: auto
+
+.visualy-hidden
+  position: absolute 
+  width: 1px 
+  height: 1px 
+  margin: -1px 
+  padding: 0 
+  border: 0 
+  clip: rect(0 0 0 0) 
+  overflow: hidden
+
+.container
+  display: flex
+  flex-wrap: wrap
+  margin:
+    left: auto
+    right: auto
+  +media-xl(up)
+    max-width: $xl - $margin * 2
+  +media-lg(down)
+    max-width: 100%
+    padding: 0 $margin
+
+

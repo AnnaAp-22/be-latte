@@ -1,0 +1,7 @@
+# Created by .ignore support plugin
+.DS_Store
+.idea
+.history
+.vscode
+/node_modules
+assets/css/*.*
