@@ -19,21 +19,69 @@
 </head>
 
 <body>
-  <!-- The structure of the html document-->
-  <section>
-    <div class="container">
-      <div class="container__auto grid__col"><span>Auto12345</span>
-      </div>
-      <div class="container__auto grid__col"><span>Auto</span>
-      </div>
-      <div class="container__auto grid__col"><span>Auto</span>
-      </div>
-      <div class="container__auto grid__col"><span>Auto</span>
-      </div>
-    </div>
+  <header class="page-header container">
+    <h1 class="visualy-hidden">Be Latte</h1> <!-- скрыт! -->
+    <nav class="main-nav js-main-nav main-nav--nojs">
+      <a class="main-nav__logo">
+        <img class="main-nav__logo-img" src="img/logo.png" alt="Be Latte -логотип">
+      </a>
+      <button class="main-nav__toggle js-main-nav-toggle burger" type="button">Открыть меню<span></span></button>
+      <ul class="main-nav__list main-nav__list--1 ">
+        <li class="main-nav__item  main-nav__item--home">
+          <a class="main-nav__link main-nav__link--home" href="#">Номе</a>
+        </li>
+        <li class="main-nav__item  main-nav__item--about">
+          <a class="main-nav__link main-nav__link--about" href="#"> About us</a>
+        </li>
+      </ul>
+      <ul class="main-nav__list main-nav__list--2 ">
+        <li class="main-nav__item  main-nav__item--menu">
+          <a class="main-nav__link main-nav__link--menu" href="#">Menu</a>
+        </li>
+        <li class="main-nav__item  main-nav__item--blog">
+          <a class="main-nav__link main-nav__link--blog" href="#">Blog</a>
+        </li>
+        <li class="main-nav__item  main-nav__item--contact">
+          <a class="main-nav__link main-nav__link--contact" href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
-  </section>
+  </header>
+  <footer class="page-footer">
+    <!--<div class="page-footer__wrapper">-->
+    <!--<div class="page-footer__social">-->
+    <!--<span class="social">-->
+    <!--<a class="social-link social-link&#45;&#45;insta" href="https://www.instagram.com/htmlacademy">-->
+    <!--<svg class="social-icon" width="22" height="21">-->
+    <!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-insta"></use>-->
+    <!--</svg>-->
+    <!--Мы в Инстаграме-->
+    <!--</a>-->
+    <!--<a class="social-link social-link&#45;&#45;fb" href="https://www.facebook.com/htmlacademy">-->
+    <!--<svg class="social-icon" width="15" height="28">-->
+    <!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"></use>-->
+    <!--</svg>-->
+    <!--Мы в Фейсбуке-->
+    <!--</a>-->
+    <!--<a class="social-link social-link&#45;&#45;tw" href="https://twitter.com/htmlacademy_ru">-->
+    <!--<svg class="social-icon" width="23" height="20">-->
+    <!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>-->
+    <!--</svg>-->
+    <!--Мы в Твитере-->
+    <!--</a>-->
+    <!--</span>-->
+    <!--</div>-->
+    <!--<a class="page-footer__copyright-link " href="https://htmlacademy.ru/intensive/adaptive">-->
+    <!--<span class="page-footer__copyright-txt">Разработано</span>-->
+    <!--<img class="page-footer__copyright-img" src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">-->
+    <!--HTML Academy-->
+    <!--</a>-->
+    <!--</div>-->
+  </footer>
   <!--script(type='text/javascript' src='js/prism.js')-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/common.js"></script>
+  <!--<script src="js/script.js"></script>-->
 </body>
 </html>

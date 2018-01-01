@@ -1,0 +1,40 @@
+.main-nav
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: space-between
+  width: 100%
+  padding:
+    right: 15px
+    left: 15px
+  min-height: 75px
+  background-color: rgba(0, 0, 0,0.349)
+.main-nav__logo
+  display: block
+  width: 75px
+
+.main-nav__toggle
+  display: inline-block
+  //margin-right: 0
+  //margin-left: auto
+  font-size: 0
+  padding: 0
+  outline: none
+  +media-sm(up)
+    display: none
+
+.main-nav__list
+  margin: 0
+  padding: 0
+  list-style: none
+  +media-xs(down)
+    width: 100%
+    overflow: hidden
+    max-height: 0
+    transition: max-height 0.2s
+
+.main-nav--open
+  .main-nav__list
+    width: 100%
+    max-height: 100vh
+    transition: max-height 0.6s
