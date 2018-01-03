@@ -3,15 +3,40 @@
   flex-wrap: wrap
   align-items: center
   justify-content: space-between
-  width: 100%
-  padding:
-    right: 15px
-    left: 15px
-  min-height: 75px
   background-color: rgba(0, 0, 0,0.349)
+  +media-md(up)
+    width: 540px
+    margin:
+      left: auto
+      right: auto
+    height: 100px
+  +media-sm(down)
+    width: 100%
+    padding:
+      right: 15px
+      left: 15px
+    min-height: 75px
+  +media-xs(down)
+    justify-content: space-between
+    padding:
+      right: 15px
+      left: 15px
+    min-height: 75px
+
 .main-nav__logo
   display: block
-  width: 75px
+  width: 154px
+  +media-md(up)
+    align-self: flex-start
+    position: relative
+    img
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+
+  +media-sm(down)
+    width: 75px
 
 .main-nav__toggle
   display: inline-block
@@ -32,9 +57,37 @@
     overflow: hidden
     max-height: 0
     transition: max-height 0.2s
+  +media-sm(up)
+    display: flex
+    //& > *
+    //  display: none
+.main-nav__list--1
+  +media-sm(up)
+    order: -1
+.main-nav__item
+  &--active
+    & > .main-nav__link
+      color: $accent-txt-color
+
+
+.main-nav__link
+  display: block
+  padding: 0.5em
+  text-decoration: none
+  color: $invert-txt-color
+
+  &:hover,
+  &:focus
+    text-decoration: none
+    background-color: $prim-color-dark
 
 .main-nav--open
   .main-nav__list
     width: 100%
     max-height: 100vh
     transition: max-height 0.6s
+  .main-nav__link
+    text-align: center
+    border-bottom: 1px solid $divider-color
+    &:first-child
+      border-top: 1px solid $divider-color

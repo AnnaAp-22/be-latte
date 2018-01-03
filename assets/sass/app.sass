@@ -14,7 +14,7 @@ body
   //?
   font-family: $font-family 
   font-size: 16px
-  line-height: 1.375em
+  line-height: $line-height
   font-weight: 400 
   color: $second-txt-color 
   background-color: $base-color 
@@ -38,6 +38,21 @@ button
   overflow: hidden
 
 .container
+  display: block
+  padding: 0 $margin
+  margin:
+    left: auto
+    right: auto
+  +media-xl(up)
+    width: $xl
+    //max-width: $xl - $margin * 2
+  +media-lg(down)
+    width: 100%
+    //padding: 0 $margin
+  +media-xs(down)
+    padding: 0 5px
+
+.container-flx
   display: flex
   flex-wrap: wrap
   padding: 0 $margin
@@ -46,9 +61,72 @@ button
     right: auto
   +media-xl(up)
     max-width: $xl
-    //max-width: $xl - $margin * 2
+  //max-width: $xl - $margin * 2
   +media-lg(down)
     max-width: 100%
-    //padding: 0 $margin
+  //padding: 0 $margin
+  +media-xs(down)
+    padding: 0 5px
+    
+
+.btn 
+  display: table
+  white-space: nowrap
+  text-align: center
+  font-size: 13px
+  line-height: 24px
+  font-weight: 700
+  padding: 13px 65px
+  text-transform: uppercase
+  text-decoration: none
+  color: $second-txt-color
+  border: 2px solid $second-txt-color
+  //background-color: $base-color
+  outline: none
+  transition: all ease 0.5s
+  cursor: pointer
+  &:hover,
+  &:focus
+    //background: $prim-color-dark
+    color: $accent-txt-color
+  &:active
+    //background: $prim-color-dark
+    color: $accent-txt-color
+    opacity: 0.3
+
+   
+//.btn_bg {
+//  border-style: solid
+//  border-width: 2px
+  border-color: rgb(57, 49, 47)
+//  background-color: rgba(57, 49, 47, 0)
+//  position: absolute
+//  left: 532px
+//  top: 1713px
+//  width: 232px
+//  height: 54px
+//  z-index: 59
+//}
+
+  box-sizing: border-box
+  display: inline-block
+  margin: 0
+  padding: $field-padding-vertical  $field-padding-horizontal
+  white-space: nowrap
+  vertical-align: middle
+  user-select: none
+  text-align: center
+  font-size: 1em
+  font-family: inherit
+  line-height: $line-height
+  text-decoration: none
+  text-transform: none
+  color: $text-color
+  border-radius: $border-radius
+  border: 1px solid $gray-lighter
+  background-color: $gray-lightest
+  background-image: none
+  cursor: pointer
+
 
 
