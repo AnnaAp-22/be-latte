@@ -1,4 +1,5 @@
 .main-nav
+  position: relative
   display: flex
   flex-wrap: wrap
   align-items: center
@@ -22,6 +23,11 @@
       right: 15px
       left: 15px
     min-height: 75px
+    //&--open
+    //  position: absolute
+    //  left: 0
+    //  top: 0
+    //  z-index: 1
 
 .main-nav__logo
   display: block
@@ -56,7 +62,7 @@
     width: 100%
     overflow: hidden
     max-height: 0
-    transition: max-height 0.2s
+    //transition: max-height 0.2s
   +media-sm(up)
     display: flex
     //& > *
@@ -78,14 +84,16 @@
 
   &:hover,
   &:focus
-    text-decoration: none
-    background-color: $prim-color-dark
+    text-decoration: underline
+    //background-color: $prim-color-dark
 
 .main-nav--open
   .main-nav__list
     width: 100%
     max-height: 100vh
     transition: max-height 0.6s
+    //&--1
+    //  top: 100%
   .main-nav__link
     text-align: center
     border-bottom: 1px solid $divider-color

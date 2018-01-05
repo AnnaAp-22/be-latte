@@ -1,0 +1,54 @@
+.menu-main
+  text-align: center
+.menu-main__head
+  margin-bottom: 4.48%
+  font-family: $font-family-s
+  font-size: 32px
+  line-height: 1em
+  font-weight: 700
+  color: $prim-txt-color
+
+.menu-main__list
+  display: flex
+  flex-wrap: wrap
+  flex-basis: 100%
+  justify-content: space-between
+  margin-top: 0
+  margin-bottom: 0
+  padding: 0
+  list-style: none
+
+.menu-main__item
+  display: block
+  +media-md(up)
+    width: 395/1270*100%
+  +media-sm(down)
+    width: 100%
+
+.menu-main__item-title
+  position: relative
+  width: 100%
+  padding-bottom: 293/395*100% // пропорции блока определяются здесь
+  background:
+    color: $prim-color
+    image: linear-gradient(rgba(236, 236, 236, 0.85), rgba(236, 236, 236, 0.85)),url('../img/coff-bg.jpg')
+    repeat: no-repeat
+    position: center
+    size: cover
+  &:hover
+    background-image: linear-gradient(rgba(245, 215, 110, 0.85), rgba(245, 215, 110, 0.85)),url('../img/coff-bg.jpg')
+
+  & > h4
+    position: absolute
+    top: 50%
+    transform: translate(0, -50%)
+    left: 0
+    min-width: 100%
+    text-align: center
+    margin-top: 0
+    margin-bottom: 0
+    font-family: $font-family-s
+    font-size: 40px
+    line-height: 1em
+    font-weight: 700
+    color: #000000
