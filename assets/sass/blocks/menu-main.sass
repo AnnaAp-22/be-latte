@@ -28,15 +28,26 @@
 .menu-main__item-title
   position: relative
   width: 100%
+  margin-bottom: 40px
   padding-bottom: 293/395*100% // пропорции блока определяются здесь
   background:
     color: $prim-color
-    image: linear-gradient(rgba(236, 236, 236, 0.85), rgba(236, 236, 236, 0.85)),url('../img/coff-bg.jpg')
+    //image: linear-gradient(rgba(236, 236, 236, 0.85), rgba(236, 236, 236, 0.85)),url('../img/coff-bg.jpg')
     repeat: no-repeat
     position: center
     size: cover
-  &:hover
-    background-image: linear-gradient(rgba(245, 215, 110, 0.85), rgba(245, 215, 110, 0.85)),url('../img/coff-bg.jpg')
+  &--coff
+    background-image: linear-gradient(rgba(236, 236, 236, 0.85), rgba(236, 236, 236, 0.85)),url('../img/coff-bg.jpg')
+    &:hover
+      background-image: linear-gradient(rgba(245, 215, 110, 0.85), rgba(245, 215, 110, 0.85)),url('../img/coff-bg.jpg')
+  &--tea
+    background-image: linear-gradient(rgba(236, 236, 236, 0.85), rgba(236, 236, 236, 0.85)),url('../img/tea-bg.jpg')
+    &:hover
+      background-image: linear-gradient(rgba(245, 215, 110, 0.85), rgba(245, 215, 110, 0.85)),url('../img/tea-bg.jpg')
+  &--dess
+    background-image: linear-gradient(rgba(236, 236, 236, 0.85), rgba(236, 236, 236, 0.85)),url('../img/dess-bg.jpg')
+    &:hover
+      background-image: linear-gradient(rgba(245, 215, 110, 0.85), rgba(245, 215, 110, 0.85)),url('../img/dess-bg.jpg')
 
   & > h4
     position: absolute
@@ -52,3 +63,33 @@
     line-height: 1em
     font-weight: 700
     color: #000000
+
+.menu-main__price-lst
+  margin-bottom: 56px
+  width: 236px
+  margin:
+    left: auto
+    right: auto
+  //+media-lg(up)
+  //  width: 236px
+  //  margin:
+  //    left: auto
+  //    right: auto
+  +media-md(only)
+    width: 100%
+    padding:
+      left: 15px
+      right: 15px
+
+.menu-main__itm-name
+  text-align: left
+  font-weight: 700
+
+.menu-main__itm-value
+  text-align: right
+
+.menu-main__lnk
+  margin-bottom: 7%
+  margin:
+    left: auto
+    right: auto
