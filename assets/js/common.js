@@ -31,6 +31,7 @@ $(document).ready(function(){
     autoplay: true,
     autoplayTimeout: 2500,
     mouseDrag: false,
+    animateOut: 'fadeOut',
     singleItem: true
     // itemElement:'li',
     // stageElement:'ul'

@@ -1,0 +1,103 @@
+.reviews
+  text-align: center
+  margin-bottom: 6%
+.reviews__head
+  margin-bottom: 4.48%
+  font-family: $font-family-s
+  font-size: 32px
+  line-height: 1em
+  font-weight: 700
+  color: $prim-txt-color
+
+.reviews__wrap
+  display: flex
+  width: 100%
+  margin-bottom: 7%
+  justify-content: center
+  background-color: #54321a
+.reviews__image
+  flex-shrink: 1
+  flex-grow: 1
+  background:
+    color: #54321a
+    image: url('../img/slide-coff.jpg')
+    repeat: no-repeat
+    position: center
+    size: cover
+  +hidden-md(down)
+
+.reviews__slider
+  position: relative
+  flex-shrink: 0
+  width: 458px
+  min-height: 425px
+  padding-left: 30px
+  padding-right: 30px
+  padding-bottom: 52px
+  background-color: $prim-color-dark
+  +media-xs(down)
+    width: 100%
+    padding-left: 10px
+    padding-right: 10px
+
+.reviews__slide
+  width: 100%
+
+.reviews__slide-num
+  font-family: $font-family-s
+  font-size: 90px
+  line-height: 87px
+  font-weight: 700
+  color: #3f3736
+  text-align: left
+  margin-top: 0
+  margin-bottom: 10px
+
+.reviews__slide-image
+  width: 86px
+  height: 86px
+  margin: 0 auto
+.reviews__slide-img
+  border-radius: 50%
+
+.reviews__slide-name
+  font-family: $font-family-s
+  font-size: 20px
+  line-height: 24px
+  font-weight: 700
+  color: $accent-txt-color
+  margin-top: 12px
+  margin-bottom: 12px
+
+.reviews__slide-txt
+  color: $invert-txt-color
+  padding-left: 60px
+  padding-right: 60px
+  margin-top: 0
+  margin-bottom: 18px
+  +media-xs(down)
+    padding-left: 0
+    padding-right: 0
+
+
+.reviews__quotes
+  position: absolute
+  right: 60px
+  bottom: 15px
+  font-family: $font-family-s
+  font-size: 48px
+  transform: scale(4)
+  +media-xs(down)
+    right: 40px
+    bottom: 0
+
+  //line-height: 87px
+  color:  #3f3736
+  font-weight: 700
+.reviews__slider .owl-theme .owl-dots .owl-dot
+  span
+    border: 1px solid #ffffff
+  &.active,
+  &:hover
+    span
+      background: $prim-color-dark
